@@ -39,7 +39,7 @@ var player = require('play-sound')(opts = {});
         console.log('Array print:');
         let success = false;
         datatable.slice().reverse().forEach(function(x) {
-            if(!x.includes('class="esaurita"') && !x.includes('class="non-attiva"')){
+            if(!x.includes('class="esaurita"') && !x.includes('class="non-attiva"') && !x.includes('class="inibita"')){
                 // Trovata disponibilità */
                 if(x.includes('<label')) {
                     id_slot = x.substring(11, 37);
