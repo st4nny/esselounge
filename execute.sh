@@ -1,4 +1,3 @@
 #!/bin/bash
-# ogni dieci minuti
-# */10 * * * *  root    . /home/user/esselounge-master/execute.sh
-node index.js
+# eseguo ogni 5 minuti
+watch -n 300 node index.js
